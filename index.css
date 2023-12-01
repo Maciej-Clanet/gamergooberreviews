@@ -1,0 +1,13 @@
+body{
+    --background-color: #00192D;
+    --accent-color: #E8020E;
+    --text-color: white;
+    --primary-color: orange;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header{
+    
+}
