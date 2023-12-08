@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     --background-color: #00192D;
     --accent-color: #E8020E;
@@ -6,8 +13,52 @@ body{
 
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'Inter', sans-serif;
 }
 
 header{
-    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px;
+    align-items: center;
+}
+.logo{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--accent-color)
+}
+
+.nav-buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & button{
+        background-color: var(--primary-color);
+        border: none;
+        padding: 8px 16px;
+        color: var(--text-color);
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--accent-color);
+        }
+    }
+
+}
+
+.banner-image-container{
+    width: 100%;
+    border: 1px solid red;
+    height: 200px;
+    background: url("./Assets/bannerImage.webp");
+    background-position:center;
+    background-size: cover;
+}
+
+@media (max-width: 800px){
+    header{
+        flex-direction: column;
+    }
 }
