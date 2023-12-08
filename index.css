@@ -85,6 +85,28 @@ header{
 }
 
 
+.heading{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 8px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+
+.card-container{
+    width: 350px;
+    border: 3px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.card-container img{
+    width: 100%;
+    min-height: 350px;
+}
+
 @media (max-width: 800px){
     header{
         flex-direction: column;
